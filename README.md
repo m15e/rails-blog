@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://stormy-journey-24140.herokuapp.com/)
 
 
 ## Getting Started
