@@ -1,4 +1,5 @@
 class TagsController < ApplicationController
+  include TagsHelper
   def index
     @tags = Tag.all
   end
@@ -11,13 +12,13 @@ class TagsController < ApplicationController
     @tag = Tag.new
   end
 
-  # def create
-  #   @tag = Tag.new(params[:id])
-  #   @tag.save
-  #
-  #   flash.notice = "Tag '#{@tag.name}' Created!"
-  #   # redirect_to article_path(@tag)
-  # end
+  def create
+    @tag = Tag.new(tag_params)
+    @tag.save
+
+    flash.notice = "Tag '#{@tag.name}' Created!"
+    redirect_to tags_path
+  end
 
   def destroy
     @tag = Tag.find(params[:id])
@@ -25,6 +26,6 @@ class TagsController < ApplicationController
 
     flash.notice = "Tag '#{@tag.name}' Destroyed!"
 
-    redirect_to article_path
+    redirect_to tags_path
   end
 end
