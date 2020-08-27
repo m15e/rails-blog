@@ -11138,3 +11138,624 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 97ms (Views: 78.8ms | ActiveRecord: 2.9ms | Allocations: 6429)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20200827084354)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "authors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar NOT NULL, "salt" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_authors_on_email" ON "authors" ("email")[0m
+  [1m[36mprimary::SchemaMigration Create (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200827084354"]]
+  [1m[35m (21.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+Started GET "/" for ::1 at 2020-08-27 16:52:58 +0800
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (4.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 244.3ms | Allocations: 6573)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1572ms (Views: 1303.1ms | ActiveRecord: 5.9ms | Allocations: 37064)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:53:16 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (5.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 110.6ms | Allocations: 1274)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 511ms (Views: 441.0ms | ActiveRecord: 7.2ms | Allocations: 6446)
+
+
+Started GET "/authors/new" for ::1 at 2020-08-27 16:53:25 +0800
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 165.5ms | Allocations: 3211)
+  Rendered authors/new.html.erb within layouts/application (Duration: 193.1ms | Allocations: 3545)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 486ms (Views: 331.8ms | ActiveRecord: 1.0ms | Allocations: 11396)
+
+
+Started POST "/authors" for ::1 at 2020-08-27 16:53:43 +0800
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"TIjkDOkeRBr9scoxhq+WVv4vQatBCBlVXdsOoB4peXvVd9BSmt5IUNAuY7nbc1tdllmbQ3pe9YkOsxJTHe9yow==", "author"=>{"username"=>"mv", "email"=>"mv@mv.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[36mAuthor Create (13.9ms)[0m  [1m[32mINSERT INTO "authors" ("username", "email", "crypted_password", "salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "mv"], ["email", "mv@mv.com"], ["crypted_password", "$2a$10$DJReX3.NXlxoauQM2P5Zcel34jZhclXlKcdNikFIix9IBHn9PAPSW"], ["salt", "bmyLB59jbQanHZHP9zsu"], ["created_at", "2020-08-27 08:53:43.873115"], ["updated_at", "2020-08-27 08:53:43.873115"]]
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 390ms (ActiveRecord: 23.1ms | Allocations: 3288)
+
+
+Started GET "/authors/1" for ::1 at 2020-08-27 16:53:44 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 219ms (Views: 198.8ms | ActiveRecord: 0.8ms | Allocations: 5561)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:54:14 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (12.7ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 65.4ms | Allocations: 768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 477ms (Views: 456.5ms | ActiveRecord: 12.7ms | Allocations: 4929)
+
+
+Started GET "/authors/new" for ::1 at 2020-08-27 16:54:23 +0800
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 11.4ms | Allocations: 1061)
+  Rendered authors/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1143)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms | Allocations: 5332)
+
+
+Started POST "/authors" for ::1 at 2020-08-27 16:54:34 +0800
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"Wa0NCk1EDJ86sAjJp0VMg2BDgK5o2ojFtK1jn9Gzn7jAUjlUPoQA1RcvoUH6mYGICDVaRlOMZBnnxX9s0nWUYA==", "author"=>{"username"=>"mv2", "email"=>"mv", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[36mAuthor Create (25.9ms)[0m  [1m[32mINSERT INTO "authors" ("username", "email", "crypted_password", "salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "mv2"], ["email", "mv"], ["crypted_password", "$2a$10$xxzHLthljQa1g6euJ1lmMe0FcalidQ3f6.59RH1YLbXvYqD9xoSRi"], ["salt", "F1k6fxDkjcXceYqTuNS4"], ["created_at", "2020-08-27 08:54:34.529943"], ["updated_at", "2020-08-27 08:54:34.529943"]]
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[35m (18.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 393ms (ActiveRecord: 44.8ms | Allocations: 6947)
+
+
+Started GET "/authors/2" for ::1 at 2020-08-27 16:54:35 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 0.5ms | Allocations: 4804)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:54:46 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (23.9ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 117.3ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 202ms (Views: 173.9ms | ActiveRecord: 23.9ms | Allocations: 5057)
+
+
+Started GET "/authors/new" for ::1 at 2020-08-27 16:54:57 +0800
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 13.6ms | Allocations: 1059)
+  Rendered authors/new.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 195ms (Views: 193.3ms | ActiveRecord: 0.0ms | Allocations: 5326)
+
+
+Started POST "/authors" for ::1 at 2020-08-27 16:55:03 +0800
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"kLSeVIV2jkFgqDbkCNlLIJUP5oEyCvLhjLlMswZsNIYJS6oK9raCC003n2xVBYYr/Xk8aQlcHj3f0VBABao/Xg==", "author"=>{"username"=>"mv", "email"=>"mv", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 39.0ms | Allocations: 1247)
+  Rendered authors/new.html.erb within layouts/application (Duration: 40.3ms | Allocations: 1330)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 414ms (Views: 152.6ms | ActiveRecord: 0.0ms | Allocations: 6483)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:55:08 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 80.6ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 112.8ms | ActiveRecord: 0.4ms | Allocations: 5068)
+
+
+Started GET "/authors/show" for ::1 at 2020-08-27 16:55:39 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.4ms | Allocations: 1224)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=show):
+  
+app/controllers/authors_controller.rb:67:in `set_author'
+Started GET "/authors/1" for ::1 at 2020-08-27 16:56:06 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 114.3ms | ActiveRecord: 0.3ms | Allocations: 4847)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:56:14 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms | Allocations: 5077)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:57:08 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (1.0ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 62.4ms | Allocations: 1168)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 312ms (Views: 298.2ms | ActiveRecord: 1.0ms | Allocations: 6281)
+
+
+Started GET "/authors/2" for ::1 at 2020-08-27 16:57:11 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 245)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 29.6ms | ActiveRecord: 0.2ms | Allocations: 5087)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:57:19 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 206ms (Views: 201.3ms | ActiveRecord: 0.2ms | Allocations: 5066)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:58:07 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (6.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:17
+  Rendered authors/index.html.erb within layouts/application (Duration: 128.6ms | Allocations: 1145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 689ms (Views: 663.7ms | ActiveRecord: 6.3ms | Allocations: 6238)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:58:24 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 43.2ms | ActiveRecord: 0.2ms | Allocations: 6224)
+
+
+Started GET "/authors/1" for ::1 at 2020-08-27 16:58:29 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (5.9ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:67:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 52.7ms | ActiveRecord: 5.9ms | Allocations: 5075)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 16:58:31 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.2ms | Allocations: 5059)
+
+
+Started GET "/articles" for ::1 at 2020-08-27 16:59:50 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (17.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 172.9ms | Allocations: 1036)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 617ms (Views: 478.8ms | ActiveRecord: 17.4ms | Allocations: 6215)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /usr/local/opt/ruby/bin/rake:23)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /Users/lucid/Desktop/rails-blog/blogger/config/environment.rb:5)
+Started GET "/articles" for ::1 at 2020-08-27 17:06:57 +0800
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (9.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 191.9ms | Allocations: 6570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1165ms (Views: 979.8ms | ActiveRecord: 52.6ms | Allocations: 37572)
+
+
+Started GET "/login" for ::1 at 2020-08-27 17:07:03 +0800
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 544)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 45.6ms | ActiveRecord: 0.0ms | Allocations: 5363)
+
+
+Started GET "/" for ::1 at 2020-08-27 17:07:19 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 867)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.2ms | Allocations: 5135)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 17:07:22 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (1.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 162.2ms | Allocations: 5070)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 376ms (Views: 328.9ms | ActiveRecord: 3.8ms | Allocations: 10287)
+
+
+Started POST "/author_sessions" for ::1 at 2020-08-27 17:07:32 +0800
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"WoCBYWkaWtONjiTEBB5VkMCL+JL2Y5hBOrDD+OgAJQU/O8fThqFMLyczXsmcvqNLhEB8cWaQtk7PpQ6ig4nQ7A==", "email"=>"mv@mv.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (5.0ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'mv@mv.com' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 528ms (ActiveRecord: 5.0ms | Allocations: 1524)
+
+
+Started GET "/articles" for ::1 at 2020-08-27 17:07:33 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+Completed 200 OK in 77ms (Views: 73.5ms | ActiveRecord: 1.4ms | Allocations: 6207)
+
+
+Started GET "/logout" for ::1 at 2020-08-27 17:07:44 +0800
+Processing by AuthorSessionsController#destroy as HTML
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:15:in `destroy'
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1051)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 17:07:45 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 47.0ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 265ms (Views: 263.4ms | ActiveRecord: 0.3ms | Allocations: 5187)
+
+
+Started GET "/login" for ::1 at 2020-08-27 17:08:23 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 108.2ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 383ms (Views: 356.5ms | ActiveRecord: 0.0ms | Allocations: 4691)
+
+
+Started POST "/author_sessions" for ::1 at 2020-08-27 17:08:32 +0800
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"WdH8fad8EYQRbSi0YZIRCucMakfMrSxU/NOpfco2NahL/j28tV9l2DdOisWYmODY5FAl6yRDPf/O53GKR2OgBg==", "email"=>"mv@mv.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (4.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."email" = 'mv@mv.com' ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 501ms (ActiveRecord: 8.0ms | Allocations: 5784)
+
+
+Started GET "/articles" for ::1 at 2020-08-27 17:08:32 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (3.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 247.6ms | Allocations: 5682)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAuthor Load (46.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+Completed 200 OK in 443ms (Views: 363.9ms | ActiveRecord: 52.1ms | Allocations: 13432)
+
+
+Started GET "/logout" for ::1 at 2020-08-27 17:08:38 +0800
+Processing by AuthorSessionsController#destroy as HTML
+  [1m[36mAuthor Load (1.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/author_sessions_controller.rb:15:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.3ms | Allocations: 1033)
+
+
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAuthor Load (2.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Destroy (3.5ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Destroy (2.0ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/logout" for ::1 at 2020-08-27 17:11:25 +0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthorSessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 0.0ms | Allocations: 460)
+
+
+Started GET "/" for ::1 at 2020-08-27 17:11:26 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 195.4ms | Allocations: 5922)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 421ms (Views: 342.1ms | ActiveRecord: 3.4ms | Allocations: 13015)
+
+
+Started GET "/login" for ::1 at 2020-08-27 17:11:29 +0800
+Processing by AuthorSessionsController#new as HTML
+  Rendering author_sessions/new.html.erb within layouts/application
+  Rendered author_sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 4706)
+
+
+Started GET "/articles" for ::1 at 2020-08-27 17:11:32 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 852)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.2ms | Allocations: 5119)
+
+
+Started GET "/authors" for ::1 at 2020-08-27 17:11:36 +0800
+  
+NoMethodError (undefined method `before_filter' for AuthorsController:Class
+Did you mean?  before_action):
+  
+app/controllers/authors_controller.rb:64:in `<class:AuthorsController>'
+app/controllers/authors_controller.rb:1:in `<main>'
+Started GET "/authors" for ::1 at 2020-08-27 17:12:25 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+NoMethodError (undefined method `before_filter' for AuthorsController:Class
+Did you mean?  before_action):
+  
+app/controllers/authors_controller.rb:3:in `<class:AuthorsController>'
+app/controllers/authors_controller.rb:1:in `<main>'
+Started GET "/authors" for ::1 at 2020-08-27 17:12:38 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 98.4ms | Allocations: 1166)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 297ms (Views: 262.4ms | ActiveRecord: 3.5ms | Allocations: 6198)
+
+
+Started GET "/authors/new" for ::1 at 2020-08-27 17:12:45 +0800
+Processing by AuthorsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:65:in `zero_authors_or_authenticated'
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 95.7ms | Allocations: 3153)
+  Rendered authors/new.html.erb within layouts/application (Duration: 110.1ms | Allocations: 3483)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 405ms (Views: 269.8ms | ActiveRecord: 2.1ms | Allocations: 11988)
+
+
+Started POST "/authors" for ::1 at 2020-08-27 17:12:55 +0800
+Processing by AuthorsController#create as HTML
+  Parameters: {"authenticity_token"=>"JT6TKeWC60xYRlj3J4z1wmEpsfRPvj1kTNWD7cmg8/nRrcm8M/n6D7+KfTORerQdbJNARpyVTruFNrhIMfjxXA==", "author"=>{"username"=>"mv", "email"=>"mv@mv.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Author"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:65:in `zero_authors_or_authenticated'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[36mAuthor Create (24.4ms)[0m  [1m[32mINSERT INTO "authors" ("username", "email", "crypted_password", "salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "mv"], ["email", "mv@mv.com"], ["crypted_password", "$2a$10$Y6k381DVJTcxrnXTpMpKZOJHOtdw7Z7nwh/GCMHGnsNXgk3xgsb0S"], ["salt", "n7WG-LxjeAUXkg1du_Tp"], ["created_at", "2020-08-27 09:12:55.997365"], ["updated_at", "2020-08-27 09:12:55.997365"]]
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+  [1m[35m (34.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/authors/3
+Completed 302 Found in 384ms (ActiveRecord: 59.5ms | Allocations: 3838)
+
+
+Started GET "/authors/3" for ::1 at 2020-08-27 17:12:56 +0800
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:74:in `set_author'
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (Duration: 17.9ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 166ms (Views: 143.5ms | ActiveRecord: 0.3ms | Allocations: 5339)
+
+
+Started GET "/authors/" for ::1 at 2020-08-27 17:13:03 +0800
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  Rendered authors/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 96.1ms | ActiveRecord: 0.5ms | Allocations: 5028)
+
+
+Started GET "/authors/new" for ::1 at 2020-08-27 17:13:06 +0800
+Processing by AuthorsController#new as HTML
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:65:in `zero_authors_or_authenticated'
+Redirected to http://localhost:3000/
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 5.8ms | Allocations: 1022)
+
+
+Started GET "/" for ::1 at 2020-08-27 17:13:06 +0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 116.7ms | Allocations: 5699)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 301ms (Views: 270.5ms | ActiveRecord: 2.5ms | Allocations: 12640)
+
+

@@ -16,9 +16,11 @@
   <% end %>
 </p>
 
+<% if logged_in? %>
 <%= link_to "edit", edit_article_path(@article) %>
 
 <%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Really delete this article?"} %>
+<% end %>
 
 
 <h3>Comments (<%= @article.comments.size %>)</h3>
